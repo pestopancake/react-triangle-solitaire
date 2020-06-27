@@ -36,8 +36,8 @@ html, body #root {
 .square{
   width: 20%;
   height: 100%;
-  background: rgb(0,0,0);
-  border: 4vw solid rgb(209, 209, 209);
+  background: rgb(187, 187, 187);
+  border: 5vw solid rgb(209, 209, 209);
   border-radius: 50px;
   overflow: hidden;
   text-align: center;
@@ -52,7 +52,16 @@ html, body #root {
 
 .square.hasPeg.active{
   /* text-decoration: underline; */
-  border: 4vh solid rgb(100, 160, 44);
+  border: 5vw solid rgb(100, 160, 44);
+}
+
+@media only screen and (min-width: 500px) {
+  .square {
+    border: 30px solid rgb(209, 209, 209);
+  }
+  .square.hasPeg.active{
+    border: 30px solid rgb(100, 160, 44);
+  }
 }
 
 #actions{
